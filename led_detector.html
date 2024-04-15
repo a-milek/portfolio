@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>LED Color Detector |Miłek Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+								<span class="title">Portfolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">IT Projects</a></li>
+							<li><a href="generic.html">Art</a></li>
+							<li><a href="generic.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>LED Color Detector</h1>
+							
+							<span class="image main"><img src="images\Led detector diagram.drawio.svg" alt="" /></span>
+							<h4>Purpose: Detecting device LED status for automatic black box testing</h4>
+
+							<p>The program is designed to detect color changes and activate LEDs in different devices. 
+								A camera connected to an external computer captures live images of the tested device. 
+								These images are then streamed to the computer using Motion, a video monitoring program, which shares the video to a designated HTTP address. 
+								The program can access the images from the address and analyze them to detect any changes between the current and previous images. 
+								This allows the program to determine if an LED is active and identify its color. As a result, it outputs the value of the color and its name.<br> 
+							</p>
+							
+							<p><b>Language used:</b> Python</p>
+							<p><b>Libraries:</b> Colorsys, PIllow Imaging Library, Requests, IO</p>
+							<h4>Image transformation:</h4>
+							<div class="col-12"><span class="image fit"><img src="images\led-detector-scheme.svg" alt="" /></span></div>
+							<h4>Setup:</h4>
+							<div class="col-12"><span class="image fit"><img src="images\led-display-setup.jpg" alt="" /></span></div>
+							<a href="https://github.com/a-milek/led-color-detector"><span class="label">GitHub Repository</span></a>
+							</div>
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Find me here!</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/a-milek" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/anna-mi%C5%82ek-98b9581b7/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
