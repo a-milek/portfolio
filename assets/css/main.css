@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,350,400,500,600,700,900");
 
 /*
 	Phantom by HTML5 UP
@@ -116,10 +116,10 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #6d6d6d;
+		font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 		font-size: 16pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75;
 	}
 
@@ -145,7 +145,7 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: #141414;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
