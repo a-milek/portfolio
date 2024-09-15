@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
   <head>
-    <title>Generic template</title>
+    <title>Anna Milek portfolio</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -16,6 +11,53 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <style>
+      /* Style for modal */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+      }
+
+      /* Add animation */
+      .modal-content {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      /* Close button */
+      .close {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* Hover effects */
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -23,45 +65,187 @@
       <!-- Header -->
       <header id="header">
         <div class="inner">
-
-          <!-- Logo -->
-            <a href="index.html" class="logo">
-            <span class="title">Portfolio</span>
-            </a>
-
           <!-- Nav -->
-            <nav>
-              <ul>
-                <li><a href="#menu">Menu</a></li>
-              </ul>
-            </nav>
-
+          <nav>
+            <ul>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
 
-    <!-- Menu -->
-    <nav id="menu">
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="index.html#projects">IT Projects</a></li>
           <li><a href="art_index.html">Art</a></li>
           <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        </ul>
+      </nav>
 
       <!-- Main -->
       <div id="main">
         <div class="inner">
-          <h1>Hey, There's nothing to see here!</h1>
-          <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-          <p>
-            
-            If you somehow ended up here that means that this part of the site
-            is not finished yet. I am constantly working to improve the website
-            and add aditional content to it! 
-          </p>
+          <header>
+            <h1>Art Portfolio</h1>
+            <p>
+              In addition to programming, I have a strong passion for drawing.
+              Here are some of my favorite pieces. For digital painting, I use
+              Paint Tool Sai. Please feel free to click on the images to view
+              them in full size.
+              
+              <h3>Commision information comming soon!</h3>
+            </p>
+          </header>
+          <section class="tiles">
+            <!-- Thumbnails with click functionality -->
+            <article>
+              <span class="image">
+                <img
+                  id="1"
+                  class="square_crop"
+                  src="images/art/dianthe.jpg"
+                  alt="Dianthe"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('1')); return false;"
+              >
+                <div class="content">
+                  <p>
+                    Portrait of my friend's RPG Character. Inspired by Melanie
+                    Martinez's FAERIE SOIRÉE.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img
+                  id="2"
+                  class="square_crop"
+                  src="images/art/jack sparrow.jpg"
+                  alt="Jack Sparrow"
+                  onclick="openModal(this)"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('2')); return false;"
+              >
+                <div class="content">
+                  <p>Curse of Strahd characters - Sparrow and Jack</p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img
+                  id="3"
+                  class="square_crop"
+                  src="images/art/kamil.jpg"
+                  alt="Kamil"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('3')); return false;"
+              >
+                <div class="content">
+                  <p>
+                    As a wedding gift for my friends, I created portraits of
+                    their characters. This one is for the groom.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img
+                  id="4"
+                  class="square_crop"
+                  src="images/art/larinelle.jpg"
+                  alt="Larinelle"
+                  onclick="openModal(this)"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('4')); return false;"
+              >
+                <div class="content">
+                  <p>
+                    As a wedding gift for my friends, I created portraits of
+                    their characters. This one is for the bride.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img
+                  id="5"
+                  class="square_crop"
+                  src="images/art/solaris full body.png"
+                  alt="Solaris Full Body Reference"
+                  onclick="openModal(this)"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('5')); return false;"
+              >
+                <div class="content">
+                  <p>Full body reference of my OC Solaris</p>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <span class="image">
+                <img
+                  id="6"
+                  class="square_crop"
+                  src="images/art/solaris.jpg"
+                  alt="Solaris Portrait"
+                  onclick="openModal(this)"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('6')); return false;"
+              >
+                <div class="content">
+                  <p>My OC - Solaris</p>
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <span class="image">
+                <img
+                  id="7"
+                  class="square_crop"
+                  src="images/art/syllia.jpg"
+                  alt="Syllia"
+                  onclick="openModal(this)"
+                />
+              </span>
+              <a
+                onclick="openModal(document.getElementById('7')); return false;"
+              >
+                <div class="content">
+                  <p>
+                    Fanart of a character that was part of a Christmas exchange
+                  </p>
+                </div>
+              </a>
+            </article>
+          </section>
         </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()"><br />&times;</span>
+        <img class="modal-content" id="img01" />
       </div>
 
       <!-- Footer -->
@@ -100,5 +284,23 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Modal JavaScript -->
+    <script>
+      // Open modal function
+      function openModal(img) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      }
+
+      // Close modal function
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+    </script>
   </body>
 </html>
